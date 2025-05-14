@@ -9,12 +9,12 @@ int main() {
         cin >> numArr[i];
     }
 
-    for(int i = 0; i<n; i++){
-        for(int j = i; j<n; j++){
-            if(numArr[i]>numArr[j]){
-                int temp = numArr[i];
-                numArr[i] = numArr[j];
-                numArr[j] = temp;
+    for(int i = 0; i<n-1; i++){
+        for(int j = 0; j<n-i-1; j++){
+            if(numArr[j]>numArr[j+1]){
+                int temp = numArr[j];
+                numArr[j] = numArr[j+1];
+                numArr[j+1] = temp;
             }
         }
     }
