@@ -1,11 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+ 
 class Student
 {
     string name;
     float cgpa;
-
+//friend Function
 public:
     friend void compare(Student stuOne, Student stuTwo);
 };
