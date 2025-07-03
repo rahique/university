@@ -17,7 +17,7 @@ int main()
     first->data = 20;
     second->data = 30;
     third->data = 40;
-    
+
     first->next = second;
     second->next = third;
     third->next = NULL;
@@ -29,11 +29,11 @@ int main()
         cout << temp->data << endl;
         temp = temp->next;
     }
-    
+
     cout << "After Insertion" << endl;
     Node *newNode = new Node;
     newNode->data = 10;
-    
+
     newNode->next = first;
 
     Node *newTemp = newNode;
